@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #CEBBC9;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    gap: 2%;
+
+}
+h1{
+    font-size: 3rem;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+.box{
+    width: 30%;
+    height: 30%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #2E86AB;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.Reset{
+    width: 10%;
+    padding: 20px;
+    text-align: center;
+    background-color:#253031;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.winnerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    color:Green ;
+    font-size: 2rem;
+    gap: 10px;
+    text-align: center;
+}
+.New{
+    width: 20%;
+    padding: 20px;
+    text-align: center;
+    background-color:#253031;
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-wrap: nowrap;
+}
+.hide{
+    display: none;
+}
+@media only screen and (max-width:1024px) {
+    .New{
+        width: 30%;
+    }
+    .Reset{
+        width: 30%;
+    }
+}
+@media only screen and (max-width:768px) {
+    .New{
+        width: 40%;
+    
+}
+.Reset {
+    width: 40%;
+}
+.winnerbox{
+    width: 100%;
+    font-size: 1.5rem;
+}
+.game{
+    height: 40%;
+}
+}
